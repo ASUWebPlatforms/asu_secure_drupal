@@ -1,0 +1,19 @@
+name: 'ASU Secure Drupal'
+description: 'Secures a Drupal site for ASU'
+type: Site
+recipes:
+  - site_builder_role
+install:
+  - asu_secure_superadmin
+  - asu_governance
+
+config:
+  actions:
+    user.role.site_builder:
+      simpleConfigUpdate:
+        dependencies:
+          module:
+            - asu_governance
+      grantPermissions:
+        - 'administer asu modules'
+        - 'administer asu themes'
