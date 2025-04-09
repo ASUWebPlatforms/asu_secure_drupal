@@ -1,5 +1,8 @@
 # ASU Secure Drupal Recipe
 
+## DEPRECATED
+Note: A change to how the modules are coded has made this recipe obsolete.
+
 ## Introduction
 This recipe is intended to lock down ASU Drupal site on the Acquia platform.
 ## Requirements
